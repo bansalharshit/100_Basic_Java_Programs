@@ -4,10 +4,12 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class FahrenheittoCelsius {
+	
 public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
 	try {
 		float temeratue;
-		Scanner sc=new Scanner(System.in);
+		
 		System.out.println("Enter Temperature in Fahrenheit");
 		temeratue=sc.nextInt();
 		temeratue=((temeratue-32)*5)/9;
@@ -18,7 +20,7 @@ public static void main(String[] args) {
 	System.out.println("Given Input Should not Be String");
 	}
 	
-	
+	sc.close();
 }
 
 }

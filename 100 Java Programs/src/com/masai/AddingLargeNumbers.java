@@ -5,9 +5,10 @@ import java.util.Scanner;
 
 public class AddingLargeNumbers {
 public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
 	try {
 		String number1,number2;
-		Scanner sc=new Scanner(System.in);
+		
 		System.out.println("first number");
 		number1=sc.nextLine();
 		System.out.println("second number");
@@ -24,6 +25,9 @@ public static void main(String[] args) {
 	}catch (Exception e) {
 		// TODO: handle exception
 e.printStackTrace();
+	}
+	finally {
+		sc.close();
 	}
 	
 }
