@@ -21,7 +21,7 @@ public static void main(String[] args) {
 	al.removeIf(str->str.contains("Ajay"));
 	System.out.println(al);
 	al.clear();
-	System.out.println("using clear command"+al);
+	System.out.println("using clear command "+al);
 	al.removeAll(al);
 	System.out.println(al);
 }
